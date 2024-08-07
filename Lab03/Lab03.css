@@ -1,0 +1,42 @@
+body {
+    .contenedor {
+        display: flex;
+        height: 100vh;
+    }
+    .panel {
+        padding: 20px;
+        border: 1px solid #929292;
+    }
+    .espacio-vacio {
+        flex: 0.5; 
+    }
+    .texto {
+        flex: 5; 
+    }
+    .derecho-vacio {
+        flex: 0.5;
+    }
+    font-family: serif;
+    text-align: left;
+
+}
+
+.encerrado {
+    border: 3px solid black;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background: #929292;
+    margin: 20px;
+}
+
+h5 {
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 20px;
+}
