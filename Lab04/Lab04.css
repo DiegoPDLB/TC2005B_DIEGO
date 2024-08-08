@@ -1,0 +1,22 @@
+body {
+    .contenedor {
+        display: flex;
+        height: 100vh;
+    }
+    .panel {
+        padding: 20px;
+        border: 1px solid #929292;
+    }
+    .espacio-vacio {
+        flex: 1; 
+    }
+    .texto {
+        flex: 4; 
+    }
+    .derecho-vacio {
+        flex: 1;
+    }
+    font-family: serif;
+    text-align: left;
+
+}
