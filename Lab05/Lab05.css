@@ -1,0 +1,17 @@
+.titulo-mediano {
+    font-size: 24px;
+    color:#ffff00;
+}
+
+.titulo-chiquito {
+    font-size: 18px;
+    color:#ffff00;
+}
+
+.texto {
+    color:#ffff00;
+}
+
+.btn-primary {
+    background-color:blue;
+}
