@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laboratorio 06</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <form class="box">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input class="input" type="email" placeholder="e.g. alex@example.com" />
+                  </div>
+                </div>
+              
+                <div class="field">
+                  <label class="label">Password</label>
+                  <div class="control">
+                    <input class="input" type="password" placeholder="********" />
+                  </div>
+                </div>
+                <button class="button is-primary">Log in</button>
+              </form>
+        <div class="box">
+            <div class="container" id="storeContainer" style="display: none;">
+                <h2>Tienda en línea</h2>
+                <table>
+                    <tr>
+                        <td style="padding: 10px; margin-right: 200000px;">
+                            <div class="product">
+                                <h3>Pescado verde</h3>
+                                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/ac63942acb88df22fed376e75b8e7b9d.jpg?imageView2/2/w/800/q/70/format/webp" 
+                                alt="pescado verde" height="200" width="200"/> <br>
+                                <p>Precio: $169mx por unidad</p>
+                                <label for="quantity1">Cantidad:</label>
+                                <input type="number" id="quantity1" min="0" value="0">
+                            </div>
+                        </td>
+                        <td style="padding: 10px; margin-right: 200000px;">
+                            <div class="product">
+                                <h3>Vaca Lola</h3>
+                                <img src="https://img.kwcdn.com/product/open/2023-09-08/1694157810891-f5e461c683b6444ca7a70d61392bd2e0-goods.jpeg?imageView2/2/w/800/q/70/format/webp" 
+                                alt="Vaca Lola" height="200" width="200"/> <br>
+                                <p>Precio: $770mx por unidad</p>
+                                <label for="quantity2">Cantidad:</label>
+                                <input type="number" id="quantity2" min="0" value="0">
+                            </div>
+                        </td>
+                        <td style="padding: 10px;">
+                            <div class="product">
+                                <h3>Chems</h3>
+                                <img src="https://img.kwcdn.com/product/open/2024-01-11/1704978465780-f759a07c66d84fb883212a4a94d7a71d-goods.jpeg?imageView2/2/w/800/q/70/format/webp" 
+                                alt="Chems" height="200" width="200"/> <br>
+                                <p>Precio: $56mx por unidad</p>
+                                <label for="quantity3">Cantidad:</label>
+                                <input type="number" id="quantity3" min="0" value="0">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="buttons">
+                    <button onclick="calculateTotal()" class="button is-link is-dark">Calcular Total</button>
+                  </div>
+                <div id="storeResult" class="result"></div>
+            </div>
+        </div> 
+        <script src="Lab06.js"></script>
+        </div>
+    </div>
+</body>
+</html>
