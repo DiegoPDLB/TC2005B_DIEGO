@@ -1,0 +1,1 @@
+alert("Cuidado, se te cae la nariz!");

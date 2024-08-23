@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Misteriosa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #008cba;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            font-size: 2.5em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: ripple 10s infinite;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        @keyframes ripple {
+            0% {
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0.1);
+            }
+            100% {
+                top: -50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 3em;
+            margin: 20px;
+            color: #008cba;
+            transition: transform 0.3s, color 0.3s;
+            display: inline-block;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+            color: #005f73;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    Bienvenidos a Mi Página
+</header>
+
+<div class="container">
+  <img src="meme.jpg" alt="meme">
+
+    <div>
+        <i class="fas fa-code icon"></i>
+        <i class="fas fa-laptop icon"></i>
+        <i class="fas fa-mobile-alt icon"></i>
+        <i class="fas fa-bullhorn icon"></i>
+    </div>
+    <p>Aquí encontrarás los mejores recursos para desarrollar tus proyectos.</p>
+</div>
+
+<footer>
+    &copy; 2024 Mi Página Web. Todos los derechos reservados.
+</footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
