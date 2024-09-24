@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Task List</h1>
+    <div>
+        <input type="text" id="taskInput" placeholder="New Task">
+        <button id="addTaskButton">Add Task</button>
+    </div>
+    <ul id="taskList">
+        <% tasks.forEach(task => { %>
+            <li><%= task.message %></li>
+        <% }) %>
+    </ul>
+    <script src="/js/main.js"></script>
+</body>
+</html>
